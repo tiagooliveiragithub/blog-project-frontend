@@ -336,6 +336,59 @@ footer ul a:hover {
 }
 
 /* 
+SEARCH
+*/
+.search__bar {
+    margin-top: 7rem;
+}
+
+.search__bar-container {
+    position: relative;
+    width: 30rem;
+    background: var(--color-gray-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0.6rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    color: var(--color-gray-300S);
+}
+
+.search__bar-container > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search__bar input {
+    background: transparent;
+    margin-left: 0.7rem;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.search__bar input::placeholder {
+    color: var(--color-gray-300);
+}
+
+/* 
+BUTTON STYLES
+*/
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--color-primary);
+    border-radius: var(--card-border-radius-2);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+
+
+/* 
 MEDIA QUERIES (MEDIUM)
 */
 
@@ -468,6 +521,13 @@ MEDIA QUERIES (MEDIUM)
         grid-template-columns: 1fr 1fr;
     }
 
+    /* 
+    BLOG
+    */
+    .search__bar-container {
+        width: 60%;
+    }
+
 }
 
 /* 
@@ -508,6 +568,12 @@ MEDIA QUERIES (SMALL)
         box-sizing: border-box;
     }
 
+    /* 
+    BLOG
+    */
+    .search__bar-container {
+        width: var(--container-width-md);
+    }
 
 
 }
